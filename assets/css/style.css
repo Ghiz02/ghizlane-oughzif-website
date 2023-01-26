@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(156, 63, 242);
+}
+/* commento */
+a {
+    color: rgba(255, 128, 0, 0.7);
+    text-decoration: none;
+}
+.color-blue {
+    color: blue;
+}
+.underline {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    background-color: bisque;
+    display: inline;
+    margin: 40px 1em;
+}
+html{
+    font-size: 16;
+}
