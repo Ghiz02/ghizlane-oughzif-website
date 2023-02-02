@@ -32,9 +32,22 @@ h5,
 h6 {
     font-family: 'Times New Roman', Times, serif;
 }
+img {
+    display: inline-block;
+    max-width: 100%;
+}
 html{
     font-size: 16;
 }
 body{
     font-family: 'Roboto't,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero-1{
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../img/img-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    text-align: center;
+    color: rgb(255, 253, 240);
 }
