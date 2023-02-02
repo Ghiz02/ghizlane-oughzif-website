@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(156, 63, 242);
+    background-color: rgb(241, 229, 218);
 }
 /* commento */
 a {
@@ -12,6 +12,9 @@ a {
 .underline {
     text-decoration: underline;
 }
+.sans-serif {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -21,6 +24,17 @@ ul li{
     display: inline;
     margin: 40px 1em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
 html{
     font-size: 16;
+}
+body{
+    font-family: 'Roboto't,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
