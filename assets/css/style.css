@@ -51,3 +51,23 @@ body{
     text-align: center;
     color: rgb(255, 253, 240);
 }
+
+.wrapper-float{ 
+    background-color:brown;
+    padding: 2em; 
+}
+.box-float{
+    background-color: rgb(232, 198, 111);
+    border: 1px solid #000; 
+    height: 3em;
+    float: left;
+    width: calc(50% - 2px);
+    /* float serve per affiancare elementi */
+}
+
+ /* pseudoelement (::after) serve per aggiugnere un tag dentro l'html tramite il css */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
