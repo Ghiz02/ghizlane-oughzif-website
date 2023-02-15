@@ -71,3 +71,34 @@ body{
     clear: both;
     display: table;
   }
+
+ /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+
+  .flex-container{
+    display:flex;
+    background-color: rgb(146, 36, 249);
+    padding: 1em;
+    height: calc(100vh - 2em);
+    flex-wrap: wrap;
+  }
+  .flex-child{
+    background-color: rgb(173, 160, 237);
+    border: 1px solid black;
+    padding: 1em;
+    width: calc(33.3% - (2em + 2px));
+  }
+  .order-first{
+    order: -1;
+  }
+
+  .flex-child:nth-child (3){
+    order:-1;
+  }
+
+  .flex-child:first-child {
+    background-color: aqua;
+}
+
+.flex-child:last-child {
+    background-color: aqua;
+}
