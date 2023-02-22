@@ -1,9 +1,90 @@
+/*begin site header*/
+html,
+body {
+    font-family: 'roboto', 'sans-serif';
+}
+
+body {
+    background-color:greenyellow;
+}
+
+@media screen and (max-width: 768px) {
+    .site-nav{
+        display:none;
+    }
+    .hamburger-bttn{
+        display: none;
+    }
+    
+}
+
+@media print {
+    body{
+        display: none;
+    }
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
 }
 
 .logo {
     max-width: 4em;
 }
+/*end site header*/
+
+
+.site-nav ul li{
+    display: inline-block;
+    margin: 1em;
+}
+
+.site-nav a {
+    color:black;
+    text-decoration: none;
+
+}
+
+.hamburger-bttn{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: black;
+}
+
+.hamburger-bttn span::before,
+.hamburger-bttn span::after {
+    content: "";
+    position: relative;
+}
+
+.hamburger-bttn span::before,
+.hamburger-bttn span::after,
+.hamburger-bttn span{
+    display: block;
+    height: 0.25em;
+    width: 1.5em;
+    display: black;
+    background-color: currentColor;
+}
+
+
+.hamburger-bttn span::before {
+    top: -0.5em;
+}
+
+.hamburger-bttn span::after{
+    top: 0.25em;
+}
+
+/*utlity classes*/
+.list-reset{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*end utlity classes*/
