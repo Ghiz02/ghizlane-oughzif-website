@@ -8,15 +8,52 @@ body {
     background-color:greenyellow;
 }
 
+img{
+    max-width: 100%;
+    display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
     .site-nav{
         display:none;
     }
-    .hamburger-bttn{
+    .hamburger-btn{
         display: none;
     }
     
 }
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+[class*="col"] {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.col-1{
+    flex:0 0 calc((100%/6) - 2em);
+}
+.col-2{
+    flex:0 0 calc((100%/6 * 2) - 2em);
+}
+.col-3{
+    flex:0 0 calc((100%/6 * 3) - 2em);
+}
+.col-4{
+    flex:0 0 calc((100%/6 * 4) - 2em);
+}
+.col-5{
+    flex:0 0 calc((100%/6 * 5) - 2em);
+}
+.col-6{
+    flex:0 0 calc(100% - 2em);
+}
+
 
 @media print {
     body{
@@ -24,11 +61,38 @@ body {
     }
 }
 
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0
+    margin-bottom: 1em;
+    line-height: 1;
+}
+
+h1,
+.h1{
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2,
+.h2{
+    font-size: 1.85rem;
+    font-weight: 900;
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+
+    background-color: azure;
+    /* width: calc(100% - 2em); */
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .logo {
@@ -43,12 +107,12 @@ body {
 }
 
 .site-nav a {
-    color:black;
+    color:rgb(0, 0, 0);
     text-decoration: none;
 
 }
 
-.hamburger-bttn{
+.hamburger-btn{
     display: block;
     background-color: transparent;
     border: 0;
@@ -56,15 +120,15 @@ body {
     color: black;
 }
 
-.hamburger-bttn span::before,
-.hamburger-bttn span::after {
+.hamburger-btn span::before,
+.hamburger-btn span::after {
     content: "";
     position: relative;
 }
 
-.hamburger-bttn span::before,
-.hamburger-bttn span::after,
-.hamburger-bttn span{
+.hamburger-btn span::before,
+.hamburger-btn span::after,
+.hamburger-btn span{
     display: block;
     height: 0.25em;
     width: 1.5em;
@@ -73,13 +137,73 @@ body {
 }
 
 
-.hamburger-bttn span::before {
+.hamburger-btn span::before {
     top: -0.5em;
 }
 
-.hamburger-bttn span::after{
+.hamburger-btn span::after{
     top: 0.25em;
 }
+
+/*inizio classe hero*/
+
+.hero {
+    position:relative;
+    overflow: hidden;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    background-color: rgb(75, 75, 75);
+}
+
+/* .hero::after{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+
+    height: 100;
+    width: 100;
+    background-color: black;
+    opacity: .66;
+    display: block;
+} */
+
+.hero .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .60;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    }
+/*fine classe hero*/
+
+/* basic section inizio */
+.basic-section{
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+}
+/* basic section fine */
+
+/* line inizio */
+.line{
+    width: 2em;
+    height: 2px;
+    display: inline-block;
+    background-color: black;
+}
+/* line fine */
 
 /*utlity classes*/
 .list-reset{
@@ -87,4 +211,43 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.container {
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
 /*end utlity classes*/
+
+.copy-white{
+    color: azure;
+}
+
+/* typography */
+h1,
+.h1{
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+    
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    
+    margin-bottom: 0.5em;
+    
+}
+
+h1,
+.h1{
+    font-size: 5rem;
+    
+}
+
+h2,
+.h2{
+    font-size: 3.75rem;
+    
+}
+/* end typography */
