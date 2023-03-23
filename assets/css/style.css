@@ -1,104 +1,325 @@
-body {
-    background-color: rgb(241, 229, 218);
-}
-/* commento */
-a {
-    color: rgba(255, 128, 0, 0.7);
-    text-decoration: none;
-}
-.color-blue {
-    color: blue;
-}
-.underline {
-    text-decoration: underline;
-}
-.sans-serif {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-ul li{
-    background-color: bisque;
-    display: inline;
-    margin: 40px 1em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Times New Roman', Times, serif;
-}
-img {
-    display: inline-block;
-    max-width: 100%;
-}
-html{
-    font-size: 16;
-}
-body{
-    font-family: 'Roboto't,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body
+{
+    margin: 0;
+    background-color: black;
+    color: white;
 }
 
-.hero-1{
-    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../img/img-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2em;
-    text-align: center;
-    color: rgb(255, 253, 240);
+.flex-parent
+{
+    height: 100vh;
+    background-color: #bd1ebd;
+    display: flex;
+}
+.flex-parent:not(:last-child)
+{
+    margin-bottom: 1em;
 }
 
-.wrapper-float{ 
-    background-color:brown;
-    padding: 2em; 
-}
-.box-float{
-    background-color: rgb(232, 198, 111);
-    border: 1px solid #000; 
-    height: 3em;
-    float: left;
-    width: calc(50% - 2px);
-    /* float serve per affiancare elementi */
-}
-
- /* pseudoelement (::after) serve per aggiugnere un tag dentro l'html tramite il css */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
- /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
-
-  .flex-container{
-    display:flex;
-    background-color: rgb(146, 36, 249);
+.flex-child
+{
     padding: 1em;
-    height: calc(100vh - 2em);
-    flex-wrap: wrap;
-  }
-  .flex-child{
-    background-color: rgb(173, 160, 237);
-    border: 1px solid black;
-    padding: 1em;
-    width: calc(33.3% - (2em + 2px));
-  }
-  .order-first{
-    order: -1;
-  }
-
-  .flex-child:nth-child (3){
-    order:-1;
-  }
-
-  .flex-child:first-child {
-    background-color: aqua;
+    margin: 1em;
+    height: calc(33.33vh - 4em);
+    width: calc(33.33vw - 4em);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ec802;
 }
 
-.flex-child:last-child {
-    background-color: aqua;
+.flex-child span
+{
+    font-size: 3rem;
+}
+
+
+
+/* 1 */
+.flex-parent-1
+{
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2 */
+.flex-parent-2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 3 */
+.flex-parent-3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* 4 */
+.flex-parent-4
+{
+    display: flex;
+    
+}
+
+.flex-child-2
+{
+    align-self: flex-end;
+}
+
+
+/* 5 */
+.flex-parent-5
+{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+/* 6 */
+.flex-parent-6
+{
+    display: flex;
+    align-items: end;
+}
+
+/* 7 */
+.flex-parent-7
+{
+    display: flex;
+    align-items: end;
+}
+
+
+.flex-child-margine
+{
+    padding: 1em;
+    height: calc(33.33vh - 4em);
+    width: 33.33vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ec802;
+}
+.flex-child-margine span
+{
+    font-size: 3rem;
+}
+
+
+/* 8 */
+.flex-parent-8
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-child-3
+{
+    align-self: flex-end;
+
+}
+
+.flex-child-4
+{
+    align-self: flex-start;
+}
+
+/* 9 */
+.flex-parent-9
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-child-5
+{
+    order: 3;
+
+}
+
+.flex-child-6
+{
+    order: 2;;
+}
+
+
+/* 10 */
+.flex-parent-10
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-child-7
+{
+    order: 3;
+    
+
+}
+
+.flex-child-8
+{
+    order: 2;
+    align-self: flex-end;
+}
+
+
+
+/* 11*/
+.flex-parent-11
+{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.flex-child-9
+{
+    order: 3;
+    margin:0;
+
+}
+
+.flex-child-10
+{
+    order: 1;
+    margin:0;
+}
+
+.flex-child-11
+{
+    order: 2;
+    margin:0;
+}
+.flex-child-margine2
+{
+    height: calc(33.33vh - 4em);
+    width: 33.33vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ec802;
+}
+
+
+
+/* 12*/
+.flex-parent-12
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-child-12
+{
+    margin-top: 33.33vh;
+}
+
+.flex-child-13
+{
+    margin-top: -33.33vh;
+}
+
+
+
+/* 13 */
+.flex-parent-13
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-child-14
+{
+    order: 2;
+
+}
+.flex-child-15
+{
+    order: 1;
+
+}
+.flex-child-16
+{
+    order: 3;
+
+}
+
+
+
+/* 14 */
+.flex-parent-14
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-parent-14 div
+{
+    width: auto;
+}
+
+.flex-child-17
+{
+    flex-grow: 1;
+}
+.flex-child-18
+{
+    flex-grow: 4;
+}
+.flex-child-19
+{
+    flex-grow: 1;
+}
+
+
+
+/* 15 */
+.flex-parent-15
+{
+    display: flex;
+    align-items: center;
+
+}
+
+.flex-parent-15 div
+{
+    width: auto;
+}
+
+.flex-child-20
+{
+    order: 3;
+    flex-grow: 1;
+}
+.flex-child-21
+{
+    order: 2;
+    flex-grow: 1;
+}
+.flex-child-22
+{
+    order: 1;
+    flex-grow: 4;
+}
+
+/* 16 */
+.flex-parent-16
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
