@@ -205,8 +205,54 @@ h2,
 }
 /* line fine */
 
+.card {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.card-copy {
+    margin-bottom: 3em;
+    line-height: 2;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1em;
+    border-radius: .15em;
+    letter-spacing: -1px;
+    border: 1px solid transparent;
+    transition: all .6s ease-in-out;
+}
+
+.btn-dark {
+    color: azure;
+    background-color: rgb(4, 4, 4);
+}
+
+.btn-dark:hover {
+    color: black;
+    background-color: aliceblue;
+    border-color: rgb(0, 0, 0);
+}
+
+
+.btn-light {
+    color: black;
+    background-color: aliceblue;
+}
+
+.btn-light:hover {
+    color: black;
+    background-color: aliceblue;
+  
+}
+
 /*utlity classes*/
-.list-reset{
+.list-reset {
     list-style: none;
     padding: 0;
     margin: 0;
