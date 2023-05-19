@@ -45,8 +45,9 @@
       font-weight: bold;}
 
 .button {
-      background-color:blueviolet;
-      border: none;
+      background-image: linear-gradient(to right, blueviolet, orange);
+      border: solid;
+      border-color: #fff;
       color: white;
       text-align: center;
       text-decoration: none;
@@ -61,7 +62,7 @@
     }
 
 .button:hover{
-      background-color:rgb(255, 255, 255);
+      background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
       border: solid;
       border-color: blueviolet;
       color:blueviolet;
@@ -127,7 +128,7 @@
 /*INIZIO FOOTER*/
 footer {
   background-color:blueviolet;
-  padding: 20px;
+  padding: 100px;
   color: #fff;
 }
 
@@ -140,6 +141,7 @@ footer {
 .footer-nav {
   text-align: center;
   margin-top: 10px;
+  
 }
 
 .footer-nav ul {
@@ -157,8 +159,11 @@ footer {
 }
 
 /* Stile del logo */
-.logo-f img {
-  max-width: 100px;
+.logo-f {
+position: absolute;
+width: 100px;
+
+
 }
 
 /* Stile delle icone social media */
