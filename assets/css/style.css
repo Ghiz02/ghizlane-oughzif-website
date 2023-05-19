@@ -1,16 +1,13 @@
-/* Add a black background color to the top navigation */
+/* NAVBAR*/
 .topnav {
   /*background-color: #a601ff;
   overflow: hidden;*/
   border:#000000;
   border-style: none none solid none; 
   border-width: 2.5px;
-  
-}
+  }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  
   float: right;
   display: block;
   color: #000000;
@@ -20,19 +17,20 @@
   margin-right: 30px;
   font-size: 17px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
-/* Change the color of links on hover */
+/*hover */
 .topnav a:hover {
   color:blueviolet;
-  
-}
+  }
 
 /*stile logo*/
 .logo{
   width: 60px;
   padding: 50px 16px;
   margin-left: 30px;}
+/*FINE logo*/
 
 
 .topnav1 {
@@ -83,6 +81,7 @@
   padding-top: 15em;
 }
 
+/*INIZIO PRIMO CONTENUTO*/
 .h2 {
     position: absolute;  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -95,40 +94,7 @@
     text-align: left;
     }
 
-/*.circle {
-  width: 20%;
-  padding-bottom: 30em;
-  margin-bottom: 10em;
-}*/
-
-
-
-.copy {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  color: rgb(28, 28, 29);
-  line-height: 1;
-  margin-left: 5em;
-  margin-top: 1em;
-  width: 50%;
-}
-
-  /*transition
-  .trans {
-    width: 100px;
-    height: 50px;
-    background: red;
-    transition: width 2s, height 2s;
-  }
-  
-  .trans:hover {
-    width: 200px;
-    height: 100px;
-  }*/
-
-
-
-  .container {
+.container {
     position: relative;
     padding-top: -20em;
     width: 400px; /* Imposta la larghezza desiderata */
@@ -142,3 +108,65 @@
   .text {
     position: absolute;
 }
+
+.copy {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: rgb(28, 28, 29);
+  line-height: 1;
+  margin-left: 5em;
+  margin-top: 1em;
+  width: 50%;
+}
+/*FINE PRIMO CONTENUTO*/
+
+
+  
+
+
+/*INIZIO FOOTER*/
+footer {
+  background-color:blueviolet;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Stile del logo */
+.logo-f img {
+  max-width: 100px;
+}
+
+/* Stile delle icone social media */
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+  
+/*FINE FOOTER*/
