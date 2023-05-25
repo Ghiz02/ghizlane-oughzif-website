@@ -1,5 +1,7 @@
 /* NAVBAR*/
 body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -197,7 +199,7 @@ body {
 .img1 {
   position: absolute;
   width: 2489px;
-  height: 1222px;
+  height: 1350px;
   left: -361px;
   top: 2194px;
   border: 4px solid #000000;
@@ -361,15 +363,95 @@ color: #000000;
 }
 
 
-.footer {
-
+footer {
+  position: relative;
   left: 0;
-  bottom: 0;
+  bottom: -3101px;
   width: 100%;
-  background-color:#8428F8;
+  height: 310px;
+  background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), #8428f8);
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content:center;
 }
+
+.footer-content {
+  flex: 1;
+  margin-top: 115px;
+  margin-left: 70px;
+}
+
+
+
+.logo-f {
+  width: 123px;
+  margin-left: 140px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.stile {
+font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+
+}
+
+a {
+  text-decoration: none;
+  color: #EDEDED;
+}
+
+.newsletter {
+box-sizing: border-box;
+
+position: absolute;
+width: 298px;
+height: 45px;
+left: 1050px;
+top: 173px;
+
+border: 1px solid #000000;
+border-radius: 74px;
+}
+
+.email {
+  margin-top: 36px;
+  opacity: 50%;
+}
+
+.button-f {
+margin-top: -38px;
+margin-left: 126px;
+box-sizing: border-box;
+position: absolute;
+width: 130px;
+height: 31px;
+background: #7910FF;
+border: 1px solid #000000;
+border-radius: 74px;
+transition: all 0.75s;
+
+}
+
+.button-f:hover {
+  border: solid;
+  background-color: #000000;
+  border-color: blueviolet;
+  color:blueviolet;
+  font-weight: bold;
+}
+
+
 
 
 /*FINE secondo contenuto*/
