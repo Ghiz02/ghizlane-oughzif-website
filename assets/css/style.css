@@ -1,7 +1,3 @@
-/* NAVBAR*/
-@media (max-width: 600px) {
-  width: 100%;
-}
 
 body {
   margin: 0;
@@ -18,9 +14,9 @@ body {
   transition: top 0.3s;
   
   }
-  
 
-  .topnav a {
+
+.topnav a {
   float: right;
   display: block;
   color: #000000;
@@ -86,7 +82,6 @@ body {
       color:blueviolet;
       transform: translateY(-10px);
     }
-
 
 /*gif animata*/
 .gif {
@@ -467,8 +462,3 @@ transition: all 0.75s;
   color:blueviolet;
   font-weight: bold;
 }
-
-
-
-
-/*FINE secondo contenuto*/
